@@ -1,5 +1,7 @@
 # PORTRAIT — a calibrated, abstention-aware Patient Passport
 
+[![DOI](https://zenodo.org/badge/1297704517.svg)](https://doi.org/10.5281/zenodo.21343950)
+
 PORTRAIT describes an individual against a reference population on nameable, clinician-readable
 axes — with calibrated uncertainty, and an explicit refusal to describe when the data do not
 support a description beyond what covariance alone explains.
