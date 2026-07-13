@@ -1,0 +1,22 @@
+# PORTRAIT - no patient data, ever. Public datasets are referenced by path only.
+data/
+Dataset/
+*.xpt
+*.csv
+*.pkl
+*.dta
+*.sas7bdat
+*.parquet
+
+# Demo/output artefacts
+portrait_demo_passport.html
+passport.html
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store

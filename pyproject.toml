@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portrait"
+version = "1.0.0"
+description = "A calibrated, abstention-aware Patient Passport that describes an individual against a reference population."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Daniela Oehring" }]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.6"]
+
+[project.scripts]
+portrait-demo = "analysis.run:main"
+
+[tool.setuptools]
+packages = [
+    "analysis",
+    "analysis.structure_test", "analysis.axes", "analysis.position",
+    "analysis.uncertainty", "analysis.atypicality", "analysis.coherence",
+    "analysis.surprise", "analysis.decision", "analysis.typicality",
+    "analysis.nhanes", "analysis.oracle", "analysis.passport", "analysis.app",
+]
+
+[tool.setuptools.package-data]
+"analysis.app" = ["*.html"]
