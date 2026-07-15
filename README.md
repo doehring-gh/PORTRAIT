@@ -6,8 +6,8 @@ PORTRAIT describes an individual against a reference population on nameable, cli
 axes — with calibrated uncertainty, and an explicit refusal to describe when the data do not
 support a description beyond what covariance alone explains.
 
-It is a **research characterisation aid, not a diagnostic or predictive device.** Every statement
-it makes is a *population-position* statement with a stated uncertainty, never a clinical prediction.
+It is a **research characterisation aid.** Every statement it makes is a *population-position*
+statement carrying a stated uncertainty.
 
 ## What it does
 
@@ -79,15 +79,15 @@ The worked clinical example uses the public NHANES adult cardiometabolic panel. 
 - `results/app/` — a prebuilt interactive Passport explorer (self-contained HTML).
 - `README`, `LICENSE`, `requirements.txt`, `reproduce.sh`.
 
-## Honest limitations
+## Scope
 
-- All statements are *within-cohort population positions*, not predictions and not diagnoses.
+- Every statement is a *within-cohort population position*, each carrying a stated uncertainty.
 - The describability guarantee is a calibrated statistical test; like any test it has power
-  limits at small sample sizes, and it will abstain rather than overclaim when data are thin.
-- Profile coherence is **descriptive**, not a discriminator: on a labelled discrimination task a
-  plain covariance distance ties it. Its value is the per-feature attribution and that it names
-  different individuals than raw extremity.
-- The interactive app depends on a browser; the numeric method depends only on the standard
+  limits at small sample sizes, and it abstains rather than overclaims when data are thin.
+- Profile coherence is **descriptive**: its value is the per-feature attribution and that it
+  names different individuals than raw extremity. On a labelled discrimination task a plain
+  covariance distance matches it, so coherence is reported for attribution.
+- The interactive app runs in a browser; the numeric method depends only on the standard
   scientific-Python stack.
 
 ## Licence
